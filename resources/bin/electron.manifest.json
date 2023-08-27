@@ -1,0 +1,38 @@
+{
+  "executable": "Steam Archive Client",
+  "splashscreen": {
+    "imageFile": ""
+  },
+  "name": "SteamArchiveClient",
+  "author": "Berkecan",
+  "singleInstance": true,
+  "environment": "Production",
+  "build": {
+    "appId": "com.Steam Archive Client.app",
+    "productName": "Steam Archive",
+    "copyright": "Copyright © 2023",
+    "buildVersion": "1.0.0",
+    "compression": "maximum",
+    "directories": {
+      "output": "../../../bin/Desktop"
+    },
+    "win": {
+      "icon": "../../../app.ico"
+    },
+    "extraResources": [
+      {
+        "from": "./bin",
+        "to": "bin",
+        "filter": [ "**/*" ]
+      }
+    ],
+    "files": [
+      {
+        "from": "./ElectronHostHook/node_modules",
+        "to": "ElectronHostHook/node_modules",
+        "filter": [ "**/*" ]
+      },
+      "**/*"
+    ]
+  }
+}
