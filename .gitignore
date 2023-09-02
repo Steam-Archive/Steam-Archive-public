@@ -1,3 +1,8 @@
 #Large Files
 Steam Archive.exe
 resources/app.asar
+
+#pdb
+*.pdb
+
+Background.jpg
